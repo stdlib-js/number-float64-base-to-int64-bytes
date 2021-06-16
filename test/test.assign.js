@@ -44,7 +44,7 @@ tape( 'the function converts an integer-valued double-precision floating-point n
 	var x;
 
 	f = proxyquire( './../lib/assign.js', {
-		'@stdlib/assert/is-little-endian': false
+		'@stdlib/assert-is-little-endian': false
 	});
 
 	x = 0;
@@ -93,7 +93,7 @@ tape( 'the function converts an integer-valued double-precision floating-point n
 	var x;
 
 	f = proxyquire( './../lib/assign.js', {
-		'@stdlib/assert/is-little-endian': true
+		'@stdlib/assert-is-little-endian': true
 	});
 
 	x = 0;
@@ -142,7 +142,7 @@ tape( 'the function supports specifying a stride (big endian; two\'s complement)
 	var x;
 
 	f = proxyquire( './../lib/assign.js', {
-		'@stdlib/assert/is-little-endian': false
+		'@stdlib/assert-is-little-endian': false
 	});
 
 	x = 0;
@@ -191,7 +191,7 @@ tape( 'the function supports specifying a stride (little endian; two\'s compleme
 	var x;
 
 	f = proxyquire( './../lib/assign.js', {
-		'@stdlib/assert/is-little-endian': true
+		'@stdlib/assert-is-little-endian': true
 	});
 
 	x = 0;
@@ -240,7 +240,7 @@ tape( 'the function supports specifying an index offset (big endian; two\'s comp
 	var x;
 
 	f = proxyquire( './../lib/assign.js', {
-		'@stdlib/assert/is-little-endian': false
+		'@stdlib/assert-is-little-endian': false
 	});
 
 	x = 0;
@@ -289,7 +289,7 @@ tape( 'the function supports specifying an index offset (little endian; two\'s c
 	var x;
 
 	f = proxyquire( './../lib/assign.js', {
-		'@stdlib/assert/is-little-endian': true
+		'@stdlib/assert-is-little-endian': true
 	});
 
 	x = 0;

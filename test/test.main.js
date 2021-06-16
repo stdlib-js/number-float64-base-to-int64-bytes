@@ -41,7 +41,7 @@ tape( 'the function converts an integer-valued double-precision floating-point n
 	var x;
 
 	f = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/is-little-endian': false
+		'@stdlib/assert-is-little-endian': false
 	});
 
 	x = 0;
@@ -79,7 +79,7 @@ tape( 'the function converts an integer-valued double-precision floating-point n
 	var x;
 
 	f = proxyquire( './../lib/main.js', {
-		'@stdlib/assert/is-little-endian': true
+		'@stdlib/assert-is-little-endian': true
 	});
 
 	x = 0;
