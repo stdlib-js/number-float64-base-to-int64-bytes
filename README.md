@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import float64ToInt64Bytes from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@deno/mod.js';
+import float64ToInt64Bytes from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@v0.2.0-deno/mod.js';
 ```
 
 #### float64ToInt64Bytes( x )
@@ -97,7 +97,7 @@ var bool = ( y === out );
 
 ```javascript
 import toBinaryStringUint8 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint8-base-to-binary-string@deno/mod.js';
-import float64ToInt64Bytes from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@deno/mod.js';
+import float64ToInt64Bytes from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@v0.2.0-deno/mod.js';
 
 var bytes;
 var str;
