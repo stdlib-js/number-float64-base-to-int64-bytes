@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import float64ToInt64Bytes from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-float64-base-to-int64-bytes/tags). For example,
+
+```javascript
 import float64ToInt64Bytes from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@v0.2.1-esm/index.mjs';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@esm/index.mjs';
 ```
 
 #### float64ToInt64Bytes( x )
@@ -102,7 +107,7 @@ var bool = ( y === out );
 <script type="module">
 
 import toBinaryStringUint8 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint8-base-to-binary-string@esm/index.mjs';
-import float64ToInt64Bytes from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@v0.2.1-esm/index.mjs';
+import float64ToInt64Bytes from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@esm/index.mjs';
 
 var bytes;
 var str;
