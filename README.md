@@ -35,20 +35,32 @@ limitations under the License.
 
 > Convert an integer-valued [double-precision floating-point number][ieee754] to a signed 64-bit integer byte array according to host byte order (endianness).
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/number-float64-base-to-int64-bytes
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import float64ToInt64Bytes from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@esm/index.mjs';
+var float64ToInt64Bytes = require( '@stdlib/number-float64-base-to-int64-bytes' );
 ```
 
 #### float64ToInt64Bytes( x )
@@ -65,7 +77,7 @@ var out = float64ToInt64Bytes( 4294967297.0 );
 Converts an integer-valued [double-precision floating-point number][ieee754] to a signed 64-bit integer byte array according to host byte order (endianness) and assigns results to a provided output array.
 
 ```javascript
-import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@esm/index.mjs';
+var Uint8Array = require( '@stdlib/array-uint8' );
 
 var out = new Uint8Array( 16 );
 var y = float64ToInt64Bytes.assign( 4294967297.0, out, 2, 1 );
@@ -95,14 +107,9 @@ var bool = ( y === out );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import toBinaryStringUint8 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-uint8-base-to-binary-string@esm/index.mjs';
-import float64ToInt64Bytes from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-int64-bytes@esm/index.mjs';
+```javascript
+var toBinaryStringUint8 = require( '@stdlib/number-uint8-base-to-binary-string' );
+var float64ToInt64Bytes = require( '@stdlib/number-float64-base-to-int64-bytes' );
 
 var bytes;
 var str;
@@ -123,10 +130,6 @@ for ( i = 0; i < 54; i++ ) {
     console.log( '%s2**%d => %s', ( sgn < 0 ) ? '-' : '+', i, str.join( ' ' ) );
     x *= 2;
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -156,7 +159,7 @@ for ( i = 0; i < 54; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -173,7 +176,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -223,7 +226,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/number/float64/base/to-int32]: https://github.com/stdlib-js/number-float64-base-to-int32/tree/esm
+[@stdlib/number/float64/base/to-int32]: https://github.com/stdlib-js/number-float64-base-to-int32
 
 <!-- </related-links> -->
 
